@@ -1,0 +1,66 @@
+@import '../../../styles/main.css';
+
+.bookingCard {
+    border-radius: 10px;
+    width: 32.333333%;
+    color: var(--primary-text-color);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.4s;
+
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+        color: var(--primary-color);
+        padding-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .bookingDetails {
+        p {
+            span {
+                font-weight: 600;
+                color: var(--primary-color);
+            }
+        }
+
+    }
+
+    strong {
+        color: #555;
+    }
+}
+
+// RESPONSIVE DESIGN
+.bookingCard {
+
+    // LG
+    @media (min-width: 992px) {
+        &:nth-child(-n+3) {
+            margin-top: 0 !important;
+        }
+    }
+
+    // MD
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 48.333333%;
+
+        &:nth-child(-n+2) {
+            margin-top: 0 !important;
+        }
+    }
+
+    // SM
+    @media (min-width: 576px) and (max-width: 767px) {
+        width: 100%;
+        display: block;
+
+        &:nth-child(1) {
+            margin-top: 0 !important;
+        }
+
+    }
+}

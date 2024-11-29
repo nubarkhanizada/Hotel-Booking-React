@@ -1,0 +1,57 @@
+@import '../../../styles/main.css';
+
+.hotelShowcaseSection {
+    background-image: url(http://demo.sunrisetheme.com/html-lyon/images/upload/bg.jpg);
+
+    .hotelShowcaseSectionAll {
+        text-align: center;
+        color: var(--primary-text-color);
+        padding: 100px 0;
+
+        h4 {
+            font-size: 30px;
+        }
+
+        h6 {
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+
+        .sliderContainer {
+
+            .sliderImage {
+                width: 256px !important;
+                height: 150px !important;
+                vertical-align: bottom;
+                outline: none;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(10%) brightness(70%) contrast(90%);
+                    cursor: pointer;
+                    transition: 0.4s;
+                }
+
+                &:hover img {
+                    filter: grayscale(0%);
+                }
+            }
+        }
+
+        .modalOverlay {
+
+            .modalContent {
+                overflow: hidden;
+            }
+        }
+    }
+
+    // SLIDER PREV-NEXT BUTTON
+    .slick-slider {
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+}

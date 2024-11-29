@@ -1,0 +1,46 @@
+@import '../../styles/main.css';
+
+.notFoundPage {
+    margin: 9% 0%;
+
+    .notFoundImage {
+        width: 250px;
+        height: 287px;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        color: var(--primary-text-color);
+        text-align: center;
+    }
+
+    p {
+        color: var(--primary-text-color);
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    a {
+        color: var(--primary-text-color);
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: 0.4s;
+
+        svg {
+            margin-right: 1%;
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}

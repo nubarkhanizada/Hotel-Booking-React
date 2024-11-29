@@ -1,0 +1,23 @@
+@import '../../styles/main.css';
+
+footer {
+    background-color: var(--primary-text-color);
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+
+        p {
+            color: #fff;
+            font-size: 14px;
+            margin: 0 !important;
+
+            span {
+                font-size: 18px;
+                font-weight: 100;
+            }
+        }
+    }
+}

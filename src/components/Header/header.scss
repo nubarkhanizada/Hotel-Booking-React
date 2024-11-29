@@ -1,0 +1,213 @@
+@import '../../styles/main.css';
+
+.headerLarge {
+    display: block;
+    padding: 10px 0;
+
+    .headerAll {
+        .headerLeft {
+            .logo {
+                svg {
+                    color: var(--primary-text-color);
+                    fill: var(--primary-text-color);
+                    width: 90px;
+                    height: 50px;
+                    vertical-align: bottom;
+                }
+            }
+
+            .navLink {
+                font-size: 14px;
+                font-weight: 500;
+                margin-right: 20px;
+                transition: 0.4s;
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        .headerRight {
+
+            .currency,
+            .language,
+            .mail,
+            .location {
+                margin-left: 20px;
+                transition: 0.4s;
+
+                &:hover {
+                    color: var(--primary-color);
+
+                    svg {
+                        color: var(--primary-color);
+                        fill: var(--primary-color);
+                    }
+
+                    .locationTitle {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+
+            .mail {
+                cursor: pointer;
+
+                svg {
+                    color: var(--primary-text-color);
+                    fill: var(--primary-text-color);
+                    width: 20px;
+                    height: 25px;
+                    transition: 0.4s;
+                }
+            }
+
+            .location {
+                .locationTitle {
+                    color: var(--primary-text-color);
+                    font-size: 14px;
+                    font-weight: 500;
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                    transition: 0.4s;
+                }
+
+                .locationMenu {
+                    .locationMenuItem {
+                        font-size: 14px;
+                        color: var(--primary-text-color);
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            select {
+                color: var(--primary-text-color);
+                border: none;
+                outline: none;
+                background: transparent;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+
+                option {
+                    color: var(--primary-text-color);
+                    background-color: #fff;
+
+                    &:checked {
+                        font-weight: 600;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.headerMobile {
+    display: none;
+    padding: 10px 0;
+
+    .headerAll {
+        .headerLeft {
+            .logo {
+                svg {
+                    color: var(--primary-text-color);
+                    fill: var(--primary-text-color);
+                    width: 90px;
+                    height: 50px;
+                    vertical-align: bottom;
+                }
+            }
+
+            .navLink {
+                font-size: 14px;
+                font-weight: 500;
+                margin-right: 20px;
+            }
+        }
+
+        .headerRight {
+            .menuBar {
+                color: var(--primary-text-color);
+                border: 0 !important;
+                outline: none;
+
+                .menubarIcon {
+                    color: var(--primary-text-color);
+                    border: 0 !important;
+                    border-radius: 0;
+                    outline: none;
+
+                }
+
+                .sidebarMenu {
+                    // .sidebarCloseButton {
+                    //     .sidebarTitle {}
+                    // }
+
+                    .sidebarBody {
+                        .sidebarNav {
+                            .navLink {
+                                color: var(--primary-text-color) !important;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                padding: 8px 0 !important;
+                                font-size: 14px !important;
+
+                                select {
+                                    color: var(--primary-text-color);
+                                    font-size: 14px;
+
+                                    option {
+                                        color: var(--primary-text-color);
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+
+                            .mail {
+
+                                svg {
+                                    color: var(--primary-text-color);
+                                    fill: var(--primary-text-color);
+                                    width: 20px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE DESIGN
+.headerLarge {
+
+    // MD
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: none !important;
+    }
+
+    // SM
+    @media (min-width: 576px) and (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+.headerMobile {
+
+    // MD
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: block !important;
+    }
+
+    // SM
+    @media (min-width: 576px) and (max-width: 767px) {
+        display: block !important;
+    }
+}

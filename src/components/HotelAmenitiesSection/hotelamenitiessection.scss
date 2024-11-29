@@ -1,0 +1,80 @@
+@import '../../styles/main.css';
+
+.hotelAmenitiesSection {
+    background-image: url(https://html.kodesolution.com/2024/hoexr-php/images/background/home.png);
+    background-size: contain;
+
+    .hotelAmenitiesSectionAll {
+        text-align: center;
+        color: var(--primary-text-color);
+        padding: 100px 0;
+
+        h4 {
+            font-size: 30px;
+        }
+
+        h6 {
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+
+        .amenityContainer {
+
+            .amenityBody {
+
+                .amenityDetails {
+                    padding: 30px 0px;
+                    border: 1px solid var(--secondary-text-color);
+                    border-radius: 10px;
+                    background-color: #ffffff81;
+                    transition: 0.4s;
+
+
+                    h5 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    &:hover {
+                        background-color: #fff;
+                        box-shadow: 0 0 15px var(--secondary-text-color);
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+// RESPONSIVE DESIGN
+.amenityBody {
+
+    // LG
+    @media (min-width: 992px) {
+        &:nth-child(-n+3) {
+            margin-top: 0 !important;
+        }
+    }
+
+    // MD
+    @media (min-width: 768px) and (max-width: 991px) {
+
+        &:nth-child(-n+2) {
+            margin-top: 0 !important;
+        }
+    }
+
+    // SM
+    @media (min-width: 576px) and (max-width: 767px) {
+
+        &:nth-child(1) {
+            margin-top: 0 !important;
+        }
+
+    }
+}

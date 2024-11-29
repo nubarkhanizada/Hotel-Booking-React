@@ -1,0 +1,50 @@
+@import '../../../styles/main.css';
+
+.modalContent {
+    background: #fff;
+    overflow-y: scroll;
+    padding: 50px;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    h4 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .modalForm {
+        display: flex;
+        flex-direction: column;
+
+        .formGroup {
+            margin-bottom: 15px;
+
+            label {
+                display: block;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 2%;
+                border: 1px solid var(--secondary-text-color);
+            }
+
+            .error {
+                margin-top: 5px;
+            }
+        }
+
+        .submitButton {
+
+            &:hover {
+                border: 1px solid var(--secondary-text-color);
+                color: var(--primary-text-color);
+            }
+        }
+    }
+}

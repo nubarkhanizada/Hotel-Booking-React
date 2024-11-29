@@ -1,0 +1,118 @@
+@import '../../../styles/main.css';
+
+// HOTEL CARD WITH MORE DETAILS
+.hotelCard {
+    border-radius: 10px;
+    width: 32.333333%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.4s;
+
+    .hotelCardImage {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+    }
+
+    .hotelCardBody {
+        padding: 20px;
+        color: var(--primary-text-color);
+
+        .hotelCardDescription {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        h5 {
+            font-size: 25px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        p {
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+
+        span {
+            font-weight: 600;
+        }
+
+        .hotelCardAmenities {
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+
+            .hotelCardAmenityItem {
+                font-size: 14px;
+                border-radius: 5px;
+                background-color: var(--primary-color);
+                margin-right: 5px;
+                margin-top: 5px;
+                padding: 2px 5px;
+            }
+
+            .hotelCardAmenityMore {
+                font-size: 14px;
+                border-radius: 5px;
+                background-color: var(--primary-color);
+                margin-top: 5px;
+                padding: 2px 5px;
+            }
+        }
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+// RESPONSIVE DESIGN
+.hotelCard {
+
+    // LG
+    @media (min-width: 992px) {
+        &:nth-child(-n+3) {
+            margin-top: 0 !important;
+        }
+    }
+
+    // MD
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 48.333333%;
+
+        &:nth-child(-n+2) {
+            margin-top: 0 !important;
+        }
+    }
+
+    // SM
+    @media (min-width: 576px) and (max-width: 767px) {
+        width: 100%;
+        display: block;
+
+        &:nth-child(1) {
+            margin-top: 0 !important;
+        }
+
+    }
+}
