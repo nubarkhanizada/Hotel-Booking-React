@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Hotel Booking + React.js + JavaScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This project is a dynamic hotel booking platform where users can explore various hotels, check their details, and make reservations. The site features five main pages: Home, Hotels, Details, Bookings, and Not Found.
 
-In the project directory, you can run:
+## Pages
 
-### `npm start`
+- **Home Page:** The landing page includes a hero section, popular destinations, and hotels. Hotel data is dynamically fetched from an API to populate the content.
+- **Hotels Page:** Displays a list of hotels in card format, showing key information (name, price, location) dynamically fetched from the API. Clicking a hotel card leads to the hotel’s Details page.
+- **Details Page:** Provides detailed information about the selected hotel, including a banner, room types, amenities, photos, and more. The “Book Now” button triggers a modal for reservation, where users can input their booking details, such as check-in/check-out dates, room type, and number of guests. Additional options like airport transfer are also available. The booking information is saved in localStorage.
+- **Bookings Page:** Displays the user's booking history, pulling data from localStorage.
+- **Not Found:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:**
+  - **React.js** for building dynamic user interfaces.
+  - **React Router** for routing between pages.
+  - **React Hooks & Context API** for managing state across the app.
+  - **SCSS, CSS, and Bootstrap** for responsive styling across desktop, tablet, and mobile devices.
+  - **Axios** for API integration, fetching hotel data dynamically.
+  - **React-Slick** for the slider component to showcase images.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Storage:**
+  - **localStorage** for saving user booking data.
