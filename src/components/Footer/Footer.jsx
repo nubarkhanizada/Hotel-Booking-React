@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="containerDefault">
         <div className="footer">
-          <p>© Halal Holiday | {new Date().getFullYear()}, All Right Reserved</p>
+          <p>© Roomify | {new Date().getFullYear()}, All Right Reserved</p>
           <p>Website by <span>Nubar Khanizada</span></p>
         </div>
       </div>
