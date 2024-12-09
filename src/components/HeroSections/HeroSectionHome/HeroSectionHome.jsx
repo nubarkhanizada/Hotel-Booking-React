@@ -6,9 +6,8 @@ const HeroSectionHome = () => {
         <section className="heroSectionHome">
             <div className="heroSectionHomeAll">
                 <h2 className="mb-0">LIFE ENJOY WITH THE GREAT MOMENTS</h2>
-                <h4 className="mb-0">Halal Holidays for the Muslim traveller</h4>
-                <h6 className="mb-0">Experience Muslim-friendly stays with women-only pools, alcohol-free hotels, secluded villas,
-                    and hijab-friendly accommodations — all on HalalHolidayCheck.</h6>
+                <h4 className="mb-0">Discover Your Perfect Stay with Roomify</h4>
+                <h6 className="mb-0">Whether you're seeking luxury or affordability, Roomify makes it easy to find the ideal room for every journey.</h6>
             </div>
             <div className="overlay"></div>
         </section>
