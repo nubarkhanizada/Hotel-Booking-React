@@ -36,9 +36,9 @@ const Header = () => {
                                     EXPLORE THE DESTINATION
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="locationMenu">
-                                    <Dropdown.Item className="locationMenuItem" href="#">HALAL HOLIDAY DUBAI</Dropdown.Item>
-                                    <Dropdown.Item className="locationMenuItem" href="#">HALAL HOLIDAY ANTALYA</Dropdown.Item>
-                                    <Dropdown.Item className="locationMenuItem" href="#">HALAL HOLIDAY BAKU</Dropdown.Item>
+                                    <Dropdown.Item className="locationMenuItem" href="#">ROOMIFY DUBAI</Dropdown.Item>
+                                    <Dropdown.Item className="locationMenuItem" href="#">ROOMIFY ANTALYA</Dropdown.Item>
+                                    <Dropdown.Item className="locationMenuItem" href="#">ROOMIFY BAKU</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
