@@ -2,14 +2,14 @@ import React from 'react'
 import HeroSectionDetails from '../../components/HeroSections/HeroSectionDetails/HeroSectionDetails'
 import HotelShowcaseSlider from '../../components/Sliders/HotelShowcaseSlider/HotelShowcaseSlider'
 import RoomSection from '../../components/RoomSection/RoomSection'
-import HotelAmenitiesSection from '../../components/HotelAmenitiesSection/HotelAmenitiesSection'
+import AmenitySection from '../../components/AmenitySection/AmenitySection'
 
 const Details = () => {
   return (
     <main>
       <HeroSectionDetails />
       <RoomSection />
-      <HotelAmenitiesSection/>
+      <AmenitySection/>
       <HotelShowcaseSlider />
     </main>
   )

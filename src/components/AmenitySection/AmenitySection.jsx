@@ -1,4 +1,4 @@
-import "./hotelamenitiessection.scss";
+import "./amenitysection.scss";
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from 'react'
 import services from "../../api/api";
